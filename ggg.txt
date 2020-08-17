@@ -1,0 +1,46 @@
+   var b = document.getElementById("TF2").value;
+    console.log(b);
+    if(!(b >= 0 && b <= 100) )
+    document.getElementById("demo2").innerHTML = "wrong";
+    else
+    document.getElementById("demo2").innerHTML = " ";
+
+    var c = document.getElementById("TF3").value;
+    console.log(c);
+    if(!(c >= 0 && c <= 100) )
+    document.getElementById("demo3").innerHTML = "wrong";
+    else
+    document.getElementById("demo3").innerHTML = " ";
+
+    var d = document.getElementById("TF4").value;
+    console.log(d);
+    if(!(d >= 0 && d <= 100) )
+    document.getElementById("demo4").innerHTML = "wrong";
+    else
+    document.getElementById("demo4").innerHTML = " ";
+
+    var e = document.getElementById("TF5").value;
+    console.log(e);
+    if(!(e >= 0 && e <= 100) )
+    document.getElementById("demo5").innerHTML = "wrong";
+    else
+    document.getElementById("demo5").innerHTML = " ";
+
+    var f = document.getElementById("TF6").value;
+    console.log(f);
+    if(!(f >= 0 && f <= 100) )
+    document.getElementById("demo6").innerHTML = "wrong";
+    else
+    document.getElementById("demo6").innerHTML = " ";
+
+    var g = document.getElementById("TF7").value;
+    console.log(g);
+    if(!(g >= 0 && g <= 100) )
+    document.getElementById("demo7").innerHTML = "wrong";
+    else
+    document.getElementById("demo7").innerHTML = " ";
+
+    if(  document.getElementById("cb7").checked == true    )
+      document.getElementById("TF7").disabled = true;
+
+}

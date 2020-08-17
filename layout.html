@@ -4,16 +4,294 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./code.js"></script>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-</head>
-<body>
-    <div class="alert alert-primary" role="alert">
-        A simple primary alert—check it out!
-      </div>
-      
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    
+</head>
+<body onload="myFunction()">
+    <h1>RENTAL CAR INTERFACE</h1>
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+            <th scope="col">Estate</th>
+            <th scope="col">5-6 passengers</th>
+            <th scope="col">7 passengers</th>
+            <th scope="col">8 passengers</th>
+            <th scope="col">9 passengers</th>
+            <th scope="col">14 passengers</th>
+            <th scope="col">16 passengers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+                <div class="input-group mb-3">
+                <div class="input-group-prepend col-xs-2">
+                  <div class="input-group-text">
+                    <input type="checkbox" aria-label="Checkbox for following text input" id="cb1" >
+                  </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" id="tf1">
+                <span id="sp1">%</span>
+                <p id="demo1"></p>
+
+            </div>
+            </td>
+            <td>
+                <div class="input-group mb-3">
+                <div class="input-group-prepend col-xs-2">
+                  <div class="input-group-text">
+                    <input type="checkbox" aria-label="Checkbox for following text input" id="cb2">
+                  </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" id="tf2">
+                <span id="sp2">%</span>
+                <p id="demo2"></p>
+
+            </div>
+            </td>
+            <td>
+                <div class="input-group mb-3">
+                <div class="input-group-prepend col-xs-2">
+                  <div class="input-group-text">
+                    <input type="checkbox" aria-label="Checkbox for following text input" id="cb3" >
+                  </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" id="tf3">
+                <span id="sp3">%</span>
+                <p id="demo3"></p>
+
+            </div>
+            </td>
+            <td>
+                <div class="input-group mb-3">
+                <div class="input-group-prepend col-xs-2">
+                  <div class="input-group-text">
+                    <input type="checkbox" aria-label="Checkbox for following text input" id="cb4">
+                  </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" id="tf4">
+                <span id="sp4">%</span>
+                <p id="demo4"></p>
+
+            </div>
+            </td>
+            <td>
+                <div class="input-group mb-3">
+                <div class="input-group-prepend col-xs-2">
+                  <div class="input-group-text">
+                    <input type="checkbox" aria-label="Checkbox for following text input"  id="cb5">
+                  </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" id="tf5">
+                <span id="sp5">%</span>
+                <p id="demo5"></p>
+
+            </div>
+            </td>
+            <td>
+                <div class="input-group mb-3">
+                <div class="input-group-prepend col-xs-2">
+                  <div class="input-group-text">
+                    <input type="checkbox" aria-label="Checkbox for following text input" id="cb6" >
+                  </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" id="tf6">
+                <span id="sp6">%</span>
+                <p id="demo6"></p>
+
+            </div>
+            </td>
+            <td>
+                <div class="input-group mb-3">
+                <div class="input-group-prepend col-xs-2">
+                  <div class="input-group-text">
+                    <input type="checkbox" aria-label="Checkbox for following text input" id="cb7" >
+                  </div>
+                </div>
+                <input type="text" class="form-control" id="tf7">
+                <span id="sp7">%</span>
+                <p id="demo7"></p>
+
+            </div>
+            </td>    
+          </tr>
+
+
+           <tr>
+            <td>
+                <div class="input-group mb-3">
+                <div class="input-group-prepend col-xs-2">
+                  <div class="input-group-text">
+                    <input type="checkbox" aria-label="Checkbox for following text input" id="cb8">
+                  </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" id="tf8"   >
+                <span id="sp8">£</span>
+                <p id="demo8"></p>
+            </div>
+            </td>
+            <td>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend col-xs-2">
+                      <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" id="cb9">
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox" id="tf9">
+                    <span id="sp9">£</span>
+                    <p id="demo9"></p>
+                </div>
+            </td>
+            <td>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend col-xs-2">
+                      <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" id="cb10">
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox" id="tf10">
+                    <span id="sp10">£</span>
+                    <p id="demo10"></p>
+                </div>
+            </td>
+            <td>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend col-xs-2">
+                      <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" id="cb11">
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox" id="tf11" >
+                    <span id="sp11">£</span>
+                    <p id="demo11"></p>
+                </div>
+            </td>
+            <td>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend col-xs-2">
+                      <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" id="cb12">
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox" id="tf12">
+                     <span id="sp12">£</span>
+                    <p id="demo12"></p>
+                </div>
+            </td>
+            <td>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend col-xs-2">
+                      <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" id="tf13">
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox" id="cb13">
+                     <span id="sp13">£</span>
+                    <p id="demo13"></p>
+                </div>
+            </td>
+            
+            <td>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend col-xs-2">
+                      <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" id="tf14">
+                        
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox" id="cb14">
+                    <span id="sp14">£</span>
+                    <p id="demo14"></p>
+                  </div>
+            </td>
+            
+            
+          </tr>
+          
+        </tbody>
+      </table>
+      
 </body>
+<script> 
+    document.getElementById("tf1").addEventListener("change", myFunction);
+  document.getElementById("tf2").addEventListener("change", myFunction);
+  document.getElementById("tf3").addEventListener("change", myFunction);
+  document.getElementById("tf4").addEventListener("change", myFunction);
+  document.getElementById("tf5").addEventListener("change", myFunction);
+  document.getElementById("tf6").addEventListener("change", myFunction);
+  document.getElementById("tf7").addEventListener("change", myFunction);
+  document.getElementById("tf8").addEventListener("change", myFunction);
+  document.getElementById("tf9").addEventListener("change", myFunction);
+  document.getElementById("tf10").addEventListener("change", myFunction);
+  document.getElementById("tf11").addEventListener("change", myFunction);
+  document.getElementById("tf12").addEventListener("change", myFunction);
+  document.getElementById("tf12").addEventListener("change", myFunction);
+  document.getElementById("tf14").addEventListener("change", myFunction);
+
+function myFunction() {
+  check();
+    var a = document.getElementById("tf1").value;
+    console.log(a);
+    if(!(a >= 0 && a <= 100) )
+    {document.getElementById("demo1").innerHTML = "Only b/w 0-100.";
+    a.value = " ";
+    }
+    else
+    document.getElementById("demo1").innerHTML = " ";
+
+    a = document.getElementById("tf2").value;
+    console.log(a);
+    if(!(a >= 0 && a <= 100) )
+    {document.getElementById("demo2").innerHTML = "Only b/w 0-100.";
+    a.value = " ";
+    }
+    else
+    document.getElementById("demo2").innerHTML = " ";
+
+   a = document.getElementById("tf3").value;
+    console.log(a);
+    if(!(a >= 0 && a <= 100) )
+    document.getElementById("demo3").innerHTML = "Only b/w 0-100.";
+    else
+    document.getElementById("demo3").innerHTML = " ";
+
+    a = document.getElementById("tf4").value;
+    console.log(a);
+    if(!(a >= 0 && a <= 100) )
+    document.getElementById("demo4").innerHTML = "Only b/w 0-100.";
+    else
+    document.getElementById("demo4").innerHTML = " ";
+
+    a = document.getElementById("tf5").value;
+    console.log(a);
+    if(!(a >= 0 && a <= 100) )
+    document.getElementById("demo5").innerHTML = "Only b/w 0-100.";
+    else
+    document.getElementById("demo5").innerHTML = " ";
+
+    a = document.getElementById("tf6").value;
+    console.log(a);
+    if(!(a >= 0 && a <= 100) )
+    document.getElementById("demo6").innerHTML = "Only b/w 0-100.";
+    else
+    document.getElementById("demo6").innerHTML = " ";
+
+    a = document.getElementById("tf7").value;
+    console.log(a);
+    if(!(a >= 0 && a <= 100) )
+    document.getElementById("demo7").innerHTML = "Only b/w 0-100.";
+    else
+    document.getElementById("demo7").innerHTML = " ";
+  }
+ 
+  //Other check here
+ function check() {
+  
+
+}
+</script>
 </html>
