@@ -233,12 +233,12 @@
   document.getElementById("tf14").addEventListener("change", myFunction);
 
 function myFunction() {
-  check();
+  
     var a = document.getElementById("tf1").value;
     console.log(a);
     if(!(a >= 0 && a <= 100) )
     {document.getElementById("demo1").innerHTML = "Only b/w 0-100.";
-    a.value = " ";
+    document.getElementById("tf1").value = " ";
     }
     else
     document.getElementById("demo1").innerHTML = " ";
@@ -247,50 +247,119 @@ function myFunction() {
     console.log(a);
     if(!(a >= 0 && a <= 100) )
     {document.getElementById("demo2").innerHTML = "Only b/w 0-100.";
-    a.value = " ";
+    document.getElementById("tf2").value = " ";
     }
     else
     document.getElementById("demo2").innerHTML = " ";
-
-   a = document.getElementById("tf3").value;
+ 
+    a = document.getElementById("tf3").value;
     console.log(a);
     if(!(a >= 0 && a <= 100) )
-    document.getElementById("demo3").innerHTML = "Only b/w 0-100.";
+    {document.getElementById("demo3").innerHTML = "Only b/w 0-100.";
+    document.getElementById("tf3").value = " ";
+    }
     else
     document.getElementById("demo3").innerHTML = " ";
 
     a = document.getElementById("tf4").value;
     console.log(a);
     if(!(a >= 0 && a <= 100) )
-    document.getElementById("demo4").innerHTML = "Only b/w 0-100.";
+    {document.getElementById("demo4").innerHTML = "Only b/w 0-100.";
+    document.getElementById("tf4").value = " ";
+    }
     else
     document.getElementById("demo4").innerHTML = " ";
 
     a = document.getElementById("tf5").value;
     console.log(a);
     if(!(a >= 0 && a <= 100) )
-    document.getElementById("demo5").innerHTML = "Only b/w 0-100.";
+   { document.getElementById("demo5").innerHTML = "Only b/w 0-100.";
+    document.getElementById("tf5").value = " ";
+    }
     else
     document.getElementById("demo5").innerHTML = " ";
 
     a = document.getElementById("tf6").value;
     console.log(a);
     if(!(a >= 0 && a <= 100) )
-    document.getElementById("demo6").innerHTML = "Only b/w 0-100.";
+   { document.getElementById("demo6").innerHTML = "Only b/w 0-100.";
+    document.getElementById("tf6").value = " ";
+    }
     else
     document.getElementById("demo6").innerHTML = " ";
 
     a = document.getElementById("tf7").value;
     console.log(a);
     if(!(a >= 0 && a <= 100) )
-    document.getElementById("demo7").innerHTML = "Only b/w 0-100.";
+   { document.getElementById("demo7").innerHTML = "Only b/w 0-100.";
+    document.getElementById("tf7").value = " ";
+    }
     else
     document.getElementById("demo7").innerHTML = " ";
+///////////////////////////////////////////////////////////////////////
+    a = document.getElementById("tf8").value;
+    console.log(a);
+    if(!(a >= 0 ) )
+    {document.getElementById("demo8").innerHTML = "Only +ve number.";
+    document.getElementById("tf8").value = " ";}
+    else
+    document.getElementById("demo8").innerHTML = " ";
+
+    a = document.getElementById("tf9").value;
+    console.log(a);
+    if(!(a >= 0 ) )
+     {document.getElementById("demo9").innerHTML = "Only +ve number.";
+    document.getElementById("tf9").value = " ";}
+    else
+    document.getElementById("demo9").innerHTML = " ";
+
+    a = document.getElementById("tf10").value;
+    console.log(a);
+    if(!(a >= 0 ) )
+     {document.getElementById("demo10").innerHTML = "Only +ve number.";
+    document.getElementById("tf10").value = " ";}
+    else
+    document.getElementById("demo10").innerHTML = " ";
+
+    a = document.getElementById("tf11").value;
+    console.log(a);
+    if(!(a >= 0 ) )
+     {document.getElementById("demo11").innerHTML = "Only +ve number.";
+    document.getElementById("tf11").value = " ";}
+    else
+    document.getElementById("demo11").innerHTML = " ";
+
+    a = document.getElementById("tf12").value;
+    console.log(a);
+    if(!(a >= 0 ) )
+    {document.getElementById("demo12").innerHTML = "Only +ve number.";
+    document.getElementById("tf12").value = " ";}
+    else
+    document.getElementById("demo12").innerHTML = " ";
+
+    a = document.getElementById("tf13").value;
+    console.log(a);
+    if(!(a >= 0 ) )
+    {document.getElementById("demo13").innerHTML = "Only +ve number.";
+    document.getElementById("tf13").value = " ";}
+    else
+    document.getElementById("demo13").innerHTML = " ";
+
+    a = document.getElementById("tf14").value;
+    console.log(a);
+    if(!(a >= 0 ) )
+    {document.getElementById("demo14").innerHTML = "Only +ve number.";
+    document.getElementById("tf14").value = " ";}
+    else
+    document.getElementById("demo14").innerHTML = " ";
   }
  
   //Other check here
  function check() {
-  
+  if(document.getElementById("cb1").checked){
+    document.getElementById("cb8").checked = false;
+    document.getElementById("tf8").disable = true;
+  }
 
 }
 </script>
