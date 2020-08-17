@@ -186,10 +186,10 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend col-xs-2">
                       <div class="input-group-text">
-                        <input type="checkbox" aria-label="Checkbox for following text input" id="tf13">
+                        <input type="checkbox" aria-label="Checkbox for following text input" id="cb13" >
                       </div>
                     </div>
-                    <input type="text" class="form-control" aria-label="Text input with checkbox" id="cb13">
+                    <input type="text" class="form-control" aria-label="Text input with checkbox"  id="tf13">
                      <span id="sp13">£</span>
                     <p id="demo13"></p>
                 </div>
@@ -199,11 +199,11 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend col-xs-2">
                       <div class="input-group-text">
-                        <input type="checkbox" aria-label="Checkbox for following text input" id="tf14">
+                        <input type="checkbox" aria-label="Checkbox for following text input" id="cb14">
                         
                       </div>
                     </div>
-                    <input type="text" class="form-control" aria-label="Text input with checkbox" id="cb14">
+                    <input type="text" class="form-control" aria-label="Text input with checkbox" id="tf14">
                     <span id="sp14">£</span>
                     <p id="demo14"></p>
                   </div>
@@ -217,7 +217,7 @@
       
 </body>
 <script> 
-    document.getElementById("tf1").addEventListener("change", myFunction);
+  document.getElementById("tf1").addEventListener("change", myFunction);
   document.getElementById("tf2").addEventListener("change", myFunction);
   document.getElementById("tf3").addEventListener("change", myFunction);
   document.getElementById("tf4").addEventListener("change", myFunction);
@@ -229,7 +229,7 @@
   document.getElementById("tf10").addEventListener("change", myFunction);
   document.getElementById("tf11").addEventListener("change", myFunction);
   document.getElementById("tf12").addEventListener("change", myFunction);
-  document.getElementById("tf12").addEventListener("change", myFunction);
+  document.getElementById("tf13").addEventListener("change", myFunction);
   document.getElementById("tf14").addEventListener("change", myFunction);
 
 function myFunction() {
@@ -299,7 +299,7 @@ function myFunction() {
 ///////////////////////////////////////////////////////////////////////
     a = document.getElementById("tf8").value;
     console.log(a);
-    if(!(a >= 0 ) )
+    if(!(a > 0 ) )
     {document.getElementById("demo8").innerHTML = "Only +ve number.";
     document.getElementById("tf8").value = " ";}
     else
@@ -307,7 +307,7 @@ function myFunction() {
 
     a = document.getElementById("tf9").value;
     console.log(a);
-    if(!(a >= 0 ) )
+    if(!(a > 0 ) )
      {document.getElementById("demo9").innerHTML = "Only +ve number.";
     document.getElementById("tf9").value = " ";}
     else
@@ -315,7 +315,7 @@ function myFunction() {
 
     a = document.getElementById("tf10").value;
     console.log(a);
-    if(!(a >= 0 ) )
+    if(!(a > 0 ) )
      {document.getElementById("demo10").innerHTML = "Only +ve number.";
     document.getElementById("tf10").value = " ";}
     else
@@ -323,7 +323,7 @@ function myFunction() {
 
     a = document.getElementById("tf11").value;
     console.log(a);
-    if(!(a >= 0 ) )
+    if(!(a > 0 ) )
      {document.getElementById("demo11").innerHTML = "Only +ve number.";
     document.getElementById("tf11").value = " ";}
     else
@@ -331,7 +331,7 @@ function myFunction() {
 
     a = document.getElementById("tf12").value;
     console.log(a);
-    if(!(a >= 0 ) )
+    if(!(a > 0 ) )
     {document.getElementById("demo12").innerHTML = "Only +ve number.";
     document.getElementById("tf12").value = " ";}
     else
@@ -339,7 +339,7 @@ function myFunction() {
 
     a = document.getElementById("tf13").value;
     console.log(a);
-    if(!(a >= 0 ) )
+    if(!(a > 0 ) )
     {document.getElementById("demo13").innerHTML = "Only +ve number.";
     document.getElementById("tf13").value = " ";}
     else
@@ -347,7 +347,7 @@ function myFunction() {
 
     a = document.getElementById("tf14").value;
     console.log(a);
-    if(!(a >= 0 ) )
+    if(!(a > 0 ) )
     {document.getElementById("demo14").innerHTML = "Only +ve number.";
     document.getElementById("tf14").value = " ";}
     else
